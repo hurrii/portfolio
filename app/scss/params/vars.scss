@@ -1,14 +1,18 @@
 $fa-font-path: "../assets/webfonts";
 
 
-$white: #fff;
-$blue: #006bae;
-$dark: #333;
-$light-grey: #d4d9e1;
+$white: #ffffff;
+$light-navy-blue: #2e4d8e;
+$darkblue: #181a36;
+$blue: #2699fb;
+$silver: #ecedee;
+$charcoal-grey: #3f444a;
+
 
 
 html {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+    font-family: 'Share Tech Mono', monospace;
     font-size: 16px;
     height: 100%;
     box-sizing: border-box;

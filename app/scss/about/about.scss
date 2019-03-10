@@ -1,0 +1,33 @@
+@import 'description__heading.scss';
+@import 'description__heading_color.scss';
+@import 'description__text';
+@import 'description__text_color.scss';
+
+@import 'about__profile/about__profile.scss';
+
+/* autoprefixer grid: on */
+.about {
+    background: url(../../assets/img/css-bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 289px;
+
+    display: grid;
+    grid-template:
+    "description profile" auto
+    "description profile" auto / 2fr 1fr;
+    ;
+}
+
+.description {
+    grid-area: description;
+    margin: 10px 10px 0 35px;
+    text-align: justify;
+}
+
+.about__profile {
+    margin: 10px 7px;
+    grid-area: profile;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

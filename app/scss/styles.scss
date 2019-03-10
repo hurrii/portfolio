@@ -4,7 +4,6 @@
 @import "fonts/fa-scss/brands.scss";
 
 
-
 // params
 @import 'params/normalize.scss';
 @import 'params/vars.scss';
@@ -13,6 +12,9 @@
 // grid
 @import 'params/grid.scss';
 
+// parts
+@import 'header/header.scss';
+@import 'about/about.scss';
 
 // media queries
 @import 'params/media-queries.scss';

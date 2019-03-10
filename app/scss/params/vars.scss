@@ -1,0 +1,24 @@
+$fa-font-path: "../assets/webfonts";
+
+
+$white: #fff;
+$blue: #006bae;
+$dark: #333;
+$light-grey: #d4d9e1;
+
+
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    min-height: 100%;
+}

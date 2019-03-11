@@ -7,7 +7,7 @@
 
 /* autoprefixer grid: on */
 .about {
-    background: url(../../assets/img/css-bg.jpg) no-repeat;
+    background: url(../assets/img/css-bg.jpg) no-repeat;
     background-size: cover;
     min-height: 289px;
 
@@ -22,6 +22,7 @@
     grid-area: description;
     margin: 10px 10px 0 35px;
     text-align: justify;
+    max-width: 400px;
 }
 
 .about__profile {

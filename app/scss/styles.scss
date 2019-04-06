@@ -9,14 +9,9 @@
 @import 'params/vars.scss';
 @import 'params/display.scss';
 
-// grid
-@import 'params/grid.scss';
-
-// parts
-@import 'header/header.scss';
-@import 'about/about.scss';
-
 // media queries
 @import 'params/media-queries.scss';
 
 
+// Sections
+@import 'about/about.scss';

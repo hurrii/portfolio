@@ -2,20 +2,24 @@ $fa-font-path: "../assets/webfonts";
 
 
 $white: #ffffff;
-$light-navy-blue: #2e4d8e;
+$navy-blue: #2e4d8e;
 $darkblue: #181a36;
-$blue: #2699fb;
+$blue: #4270d1;
 $silver: #ecedee;
-$charcoal-grey: #3f444a;
+$grey: #3f444a;
 
+// Utility classes
+@import 'utilities.scss';
 
 
 html {
-    @import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
-    font-family: 'Share Tech Mono', monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     height: 100%;
     box-sizing: border-box;
+    color: $silver;
+    // Fluid fonts
+    font-size: calc(11px + .3vw);
 }
 
 

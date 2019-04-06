@@ -1,34 +1,25 @@
-@import 'description__heading.scss';
-@import 'description__heading_color.scss';
-@import 'description__text';
-@import 'description__text_color.scss';
+@import 'about__text-part.scss';
+    @import 'about__heading.scss';
+    @import 'about__description.scss';
+@import 'about__user-block.scss';
+    @import 'about__userpic.scss';
+    @import 'about__username.scss';
+    @import 'about__job-position.scss';
+    @import 'about__links.scss';
 
-@import 'about__profile/about__profile.scss';
-
-/* autoprefixer grid: on */
 .about {
-    background: url(../assets/img/css-bg.jpg) no-repeat;
-    background-size: cover;
-    min-height: 289px;
-
-    display: grid;
-    grid-template:
-    "description profile" auto
-    "description profile" auto / 2fr 1fr;
-    ;
-}
-
-.description {
-    grid-area: description;
-    margin: 10px 10px 0 35px;
-    text-align: justify;
-    max-width: 400px;
-}
-
-.about__profile {
-    margin: 10px 7px;
-    grid-area: profile;
+    background: url(../../assets/img/css-bg.jpg) center / cover no-repeat;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+.about__userpic {
+	width: 100%;
+	max-width: 340px;
+}
+
+.about__text-part {
+    min-width: 50%;
+    max-width: 60%;
 }

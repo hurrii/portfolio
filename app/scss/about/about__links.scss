@@ -1,0 +1,17 @@
+.about__links {
+
+    margin: 0.5rem;
+    padding: 0;
+
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 0 0.5rem;
+
+        img {
+            min-width: 32px;
+            max-width: 42px;
+        }
+    }
+
+}

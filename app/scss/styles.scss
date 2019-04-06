@@ -8,10 +8,16 @@
 @import 'params/normalize.scss';
 @import 'params/vars.scss';
 @import 'params/display.scss';
-
-// media queries
-@import 'params/media-queries.scss';
+@import 'params/utilities.scss';
+@import 'params/headings.scss';
+@import 'params/mobile-hidden.scss';
 
 
 // Sections
 @import 'about/about.scss';
+@import 'slanted-spacer/slanted-spacer.scss';
+@import 'my-works/my-works.scss';
+
+
+// media queries
+@import 'params/media-queries.scss';

@@ -1,0 +1,17 @@
+.my-works__item {
+    margin: 0 1rem;
+    border: 3px solid white;
+    border-radius: 5px;
+    //It's a shorthand for border-width , border-style , and border-color
+}
+
+
+@media only screen and (max-width : 520px) {
+    .my-works__item {
+        display: none;
+    }
+
+    .my-works__item:nth-child(1) {
+        display: inline-block;
+    }
+}

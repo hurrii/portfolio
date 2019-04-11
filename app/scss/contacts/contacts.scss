@@ -1,0 +1,24 @@
+@import 'contacts/contacts__showcase.scss';
+
+.contacts {
+    padding-bottom: 5%;
+
+    ul {
+        list-style: none;
+        font-size: 1.2rem;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        font-weight: lighter;
+        margin-bottom: 1px;
+    }
+}
+
+.contacts__icon {
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 5px;
+}

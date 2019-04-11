@@ -1,17 +1,14 @@
 .my-works__item {
     margin: 0 1rem;
-    border: 3px solid white;
+    border: 0.2rem solid white;
     border-radius: 5px;
+    padding: 12vw;
+
+
     //It's a shorthand for border-width , border-style , and border-color
 }
 
-
-@media only screen and (max-width : 520px) {
-    .my-works__item {
-        display: none;
-    }
-
-    .my-works__item:nth-child(1) {
-        display: inline-block;
-    }
+.my-works__item-emtsosk {
+    background: url(/assets/img/emtsosk_thumbnail.jpg) center / cover no-repeat;
+    //background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]; 
 }

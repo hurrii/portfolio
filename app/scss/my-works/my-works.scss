@@ -4,16 +4,10 @@
 @import 'my-works/my-works__item';
 
 .my-works {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-bottom: 5%;
 }
 
 .my-works__showcase {
-	display: flex;
-    align-items: center;
-    max-width: 100%;
     padding: 1rem;
 }
 

@@ -1,9 +1,28 @@
-.text-shadow {text-shadow: 1px 1px 6px black;}
+.t-shadow {text-shadow: 1px 1px 6px black;}
 
-.text-blue {color: $blue;}
-.text-grey {color: $grey;}
+.t-blue {color: $blue;}
+.t-grey {color: $grey;}
 
-.bg-darkblue {background: #181a36;}
-.bg-blue {background: #2e4d8e;}
-.bg-silver {background: #ecedee;}
-.bg-grey {background: #3f444a;}
+.bg-darkblue {background: $darkblue;}
+.bg-navyblue {background: $navyblue;}
+.bg-blue {background: $blue;}
+.bg-silver {background: $silver;}
+.bg-grey {background: $grey;}
+.bg-lightgrey {background: $lightgrey;}
+
+.t-align-center {
+    text-align: center;
+}
+.t-align-justify {
+    text-align: justify;
+}
+
+.container__centered-row {
+    display: flex;
+    justify-content: center;
+}
+.container__centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -12,17 +12,17 @@
     <main>
             <div class="slanted-spacer bg-darkblue slanted-spacer_small"></div>
     <!-- About -->
-    <section class="about">
+    <section class="about container__centered-row">
             
         <div class="about__text-part">
-            <h3 class="about__heading text-blue">About me</h3>
+            <h3 class="about__heading t-blue">Обо мне</h3>
             <p class="about__description">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
         </div>
 
         <div class="about__user-block">
             <img class="about__userpic" src="assets/img/userpic.jpg" alt="User image">
-            <h3 class="about__username text-blue text-shadow">Pavel Silenko</h3>
-            <p class="about__job-position text-shadow">frontend developer</p>
+            <h3 class="about__username t-blue t-shadow">Pavel Silenko</h3>
+            <p class="about__job-position t-shadow">frontend developer</p>
             <ul class="about__links">
                 <li>
                 <a href="https://github.com/hurrii" target="_blank">
@@ -35,7 +35,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="##" target="_blank">
+                    <a href="https://www.freecodecamp.org/hurrii" target="_blank">
                     <img srcset="assets/img/freecodecamp-icon-32px.png 320w, assets/img/freecodecamp-icon-64px.png 768w" src="assets/img/freecodecamp-icon-64px.png" alt="freecodecamp link">
                     </a>
                 </li>
@@ -47,17 +47,66 @@
     <!-- My works -->
     <section class="my-works bg-darkblue">
         <div class="slanted-spacer bg-darkblue"></div>
-        <h1>Мои работы</h1>
-        <div class="my-works__showcase">
+        <h1 class="t-align-center">Мои работы</h1>
+        <div class="my-works__showcase container__centered-row">
                 <button class="my-works__button my-works__button_color fas fa-chevron-left"></button>
+            <div class="my-works__item my-works__item-emtsosk"></div>
+            <div class="my-works__item my-works__item-emtsosk"></div>
+            <button class="my-works__button my-works__button_color fas fa-chevron-right"></button>
+            <!-- 
+                
                 <img class="my-works__item" src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk">
                 <img class="my-works__item" src="assets/img/showcase-example_thumbnail.png" alt="Emtsosk">
                 <img class="my-works__item" src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk">
-                <button class="my-works__button my-works__button_color fas fa-chevron-right"></button>
+                
+        -->
         </div>
         
     </section>
     <div class="slanted-spacer bg-darkblue"></div>
+    <!-- Skills section -->
+    <section class="skills bg-navyblue">
+    <div class="slanted-spacer bg-navyblue"></div>
+        <h1 class="t-align-center">Навыки</h1>
+        <p class="skills__description t-align-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi magnam, maxime numquam nam voluptate perspiciatis possimus vitae minima deleniti illum aliquam!</p>
+        <div class="skills__showcase container__centered-row">
+            
+
+            <img src="/assets/img/freecodecamp-icon-96px.png" alt="">
+            <img src="/assets/img/freecodecamp-icon-96px.png" alt="">
+            <img src="/assets/img/freecodecamp-icon-96px.png" alt="">
+            <img src="/assets/img/freecodecamp-icon-96px.png" alt="">
+            <img src="/assets/img/freecodecamp-icon-96px.png" alt="">
+        </div>
+    </section>
+    <div class="slanted-spacer bg-navyblue"></div>
+    <!-- Education section -->
+    <section class="education bg-silver t-grey">
+        <div class="slanted-spacer bg-silver"></div>
+        <h1 class="t-align-center">Образование</h1>
+            <div class="education__showcase container__centered-column">
+                <div class="education__item" id="item1">
+                    <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'19</p>
+                    <p class="education__faculty-name">Факультет бизнес-информатики и управления комплексными системами</p>
+                </div>
+                <div class="education__item-spacer"></div>
+                <div class="education__item" id="item2">
+                    <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'16</p>
+                    <p class="education__faculty-name">Факультет управления и экономики высоких технологий</p>
+                </div>
+            </div>
+    </section>
+    <div class="slanted-spacer bg-silver"></div>
+    <!-- Contacts section -->
+    <section class="contacts bg-grey">
+    <div class="slanted-spacer bg-grey"></div>
+        <h1 class="t-align-center">Заинтересованы в совместной работе?</h1>
+        <p class="t-align-center">Напишите мне на почту или в telegram.</p>
+        <ul class="contacts__showcase">
+            <li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i><a href="tg://resolve?domain=hurrii">hurrii</a></li>
+            <li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i><a href="mailto:silenko.pa@gmail.com" target="_top">silenko.pa@gmail.com</a></li>
+        </ul>
+    </section>
 </main>
 </body>
 </html>

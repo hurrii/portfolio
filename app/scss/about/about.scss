@@ -1,3 +1,4 @@
+@import 'about__container.scss';
 @import 'about__text-part.scss';
     @import 'about__heading.scss';
     @import 'about__description.scss';
@@ -12,12 +13,18 @@
     padding: 5%;
 }
 
+.about__container {
+    max-width: 760px;
+}
+
 .about__userpic {
 	width: 100%;
-    max-width: 340px;
 }
 
 .about__text-part {
-    min-width: 50%;
-    max-width: 60%;
+    max-width: 65%;
+}
+
+.about__user-block {
+    max-width: 35%;
 }

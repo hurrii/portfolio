@@ -12,18 +12,18 @@
     <main>
             <div class="slanted-spacer bg-darkblue slanted-spacer_small"></div>
     <!-- About -->
-    <section class="about container__centered-row">
-            
+    <section class="about container__centered">
+        <div class="about__container container__centered">
         <div class="about__text-part">
             <h3 class="about__heading t-blue">Обо мне</h3>
-            <p class="about__description">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
+            <p class="about__description t-align-justify">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
         </div>
 
-        <div class="about__user-block">
+        <div class="about__user-block container__centered">
             <img class="about__userpic" src="assets/img/userpic.jpg" alt="User image">
             <h3 class="about__username t-blue t-shadow">Pavel Silenko</h3>
             <p class="about__job-position t-shadow">frontend developer</p>
-            <ul class="about__links">
+            <ul class="about__links container__centered">
                 <li>
                 <a href="https://github.com/hurrii" target="_blank">
                     <img srcset="assets/img/GitHub-Mark-Light-32px.png 320w, assets/img/GitHub-Mark-Light-64px.png 768w" src="assets/img/GitHub-Mark-Light-64px.png" alt="Github link">
@@ -41,27 +41,27 @@
                 </li>
             </ul>
         </div>
-
+        </div>
     </section>
     
     <!-- My works -->
     <section class="my-works bg-darkblue">
         <div class="slanted-spacer bg-darkblue"></div>
         <h1 class="t-align-center">Мои работы</h1>
-        <div class="my-works__showcase container__centered-row">
-                <button class="my-works__button my-works__button_color fas fa-chevron-left"></button>
-            <div class="my-works__item my-works__item-emtsosk"></div>
-            <div class="my-works__item my-works__item-emtsosk"></div>
-            <button class="my-works__button my-works__button_color fas fa-chevron-right"></button>
-            <!-- 
-                
-                <img class="my-works__item" src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk">
-                <img class="my-works__item" src="assets/img/showcase-example_thumbnail.png" alt="Emtsosk">
-                <img class="my-works__item" src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk">
-                
-        -->
+    <div class="my-works__container container__centered">
+        <div class="my-works__showcase container__centered">
+            <!-- <button class="my-works__button my-works__button_color fas fa-chevron-left"></button> -->
+                    <figure class="my-works__item"><img  src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk"><figcaption>ЭМЦОСК</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    
+           <!-- <button class="my-works__button my-works__button_color fas fa-chevron-right"></button> -->
         </div>
-        
+    </div>
+
     </section>
     <div class="slanted-spacer bg-darkblue"></div>
     <!-- Skills section -->
@@ -70,7 +70,7 @@
             <div class="skills-container">
             <div class="skills__showcase bg-silver box-shadow t-grey">
                     <h1 class="t-align-center">Навыки</h1>
-                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взраимодействия пользователей независимо от типа используемых ими устройств. Благодарю применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
+                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей независимо от типа используемых ими устройств. Благодарю применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
                 <div class="skills__skills-col">
                 <h4 class="t-align-center">Frontend</h4>
                 <ul class="skills__list">
@@ -131,17 +131,21 @@
     <section class="education bg-silver t-grey">
         <div class="slanted-spacer bg-silver"></div>
         <h1 class="t-align-center">Образование</h1>
-            <div class="education__showcase container__centered-column">
-                <div class="education__item" id="item1">
-                    <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'19</p>
-                    <p class="education__degree-type">Магистратура</p>
-                    <p class="education__faculty-name">Факультет бизнес-информатики и управления комплексными системами</p>
-                </div>
-                <div class="education__item-spacer"></div>
-                <div class="education__item box-shadow" id="item2">
+            <div class="education__container container__centered">
+                <div class="education__showcase bg-lightgrey">
+                    <div class="education__item">
+                        <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'19</p>
+                        <p class="education__degree-type">Магистратура</p>
+                        <p class="education__faculty-name">Факультет бизнес-информатики и управления комплексными системами</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="education__item box-shadow">
                     <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'16</p>
                     <p class="education__degree-type">Бакалавриат</p>
                     <p class="education__faculty-name">Факультет управления и экономики высоких технологий</p>
+                </div>
                 </div>
             </div>
     </section>
@@ -151,11 +155,43 @@
     <div class="slanted-spacer bg-grey"></div>
         <h1 class="t-align-center">Заинтересованы в совместной работе?</h1>
         <p class="t-align-center">Напишите мне на почту или в telegram.</p>
-        <ul class="contacts__showcase">
-            <li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i><a href="tg://resolve?domain=hurrii">hurrii</a></li>
-            <li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i><a href="mailto:silenko.pa@gmail.com" target="_top">silenko.pa@gmail.com</a></li>
-        </ul>
+        <div class="contacts__container container__centered">
+            <ul class="contacts__showcase">
+                <li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i><a href="tg://resolve?domain=hurrii">hurrii</a></li>
+                <li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i><a href="mailto:silenko.pa@gmail.com" target="_top">silenko.pa@gmail.com</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="menu__onpage-navigation">
+            <div class="slanted-spacer bg-silver"><button class="menu__icon fas fa-bars bg-darkblue"></button></div>
+    </div>
+    <section class="menu bg-darkblue" id="menu__window">
+        
+        
+        
+        <nav class="container__centered">
+            <ul class="t-align-center">
+                <li>
+                <a href="#">Обо мне</a>
+                </li>
+                <li>
+                <a href="#">Мои работы</a>
+                </li>
+                <li>
+                <a href="#">Навыки</a>
+                </li>
+                <li>
+                <a href="#">Образование</a>
+                </li>
+                <li>
+                <a href="#">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button id="menu__exit">&#10006;</button>
     </section>
 </main>
+<!-- JS -->
+<script src="assets/js/menu__exit-button.js"></script> 
 </body>
 </html>

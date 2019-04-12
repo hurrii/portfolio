@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     justify-content: center;
     min-width: 50%;
-    max-width: 400px;
+    max-width: 760px;
     border-radius: 4px;
     padding: 1.5rem;
 }
@@ -13,4 +13,11 @@
     .skills__showcase {
         max-width: 90%;
     }
- }
+}
+
+@media (max-width: 1024px) {
+
+    .skills__showcase {
+        min-width: 60%;
+    }
+}

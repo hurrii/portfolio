@@ -1,3 +1,6 @@
 .my-works__showcase {
-    
+    min-width: 50%;
+    max-width: 760px;
+    flex-wrap: wrap;
+    justify-content: center;
 }

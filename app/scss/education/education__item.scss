@@ -6,8 +6,8 @@
     width: 100%;
 }
 
-@media only screen and (max-width:768px) {
-    .education__item {max-width: 400px;}
+@media only screen and (max-width:480px) {
+    .education__item {max-width: 90%;}
 }
 
 #item1.education__item {

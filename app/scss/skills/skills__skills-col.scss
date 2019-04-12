@@ -1,0 +1,9 @@
+.skills__skills-col {
+    flex-basis: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+    .skills__skills-col {
+        flex-basis: 100%;
+    }
+}

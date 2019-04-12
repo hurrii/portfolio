@@ -1,3 +1,22 @@
+.education__showcase {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 760px;
+    min-width: 50%;
+    border: 1px solid white;
+
+    hr {
+        width: 90%;
+        height: 1px;
+        background: silver;
+        border: 0;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .education__showcase {max-width: 90%;}
+}
+
 .education__showcase * {
     background: $lightgrey;
 }

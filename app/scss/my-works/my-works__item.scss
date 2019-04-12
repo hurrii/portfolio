@@ -1,14 +1,28 @@
 .my-works__item {
-    margin: 0 1rem;
-    border: 0.2rem solid white;
-    border-radius: 5px;
-    padding: 12vw;
+    max-width: 25%;
+    min-width: 10%;
 
+    figcaption{
+        font-size: 0.9rem;
+        font-weight: lighter;
+    }
+}
 
-    //It's a shorthand for border-width , border-style , and border-color
+.my-works__item {
+    
+    img {
+        max-width: 100%;
+        border: 1px solid white;
+        border-radius: 4px;
+    }
+    
 }
 
 .my-works__item-emtsosk {
-    background: url(/assets/img/emtsosk_thumbnail.jpg) center / cover no-repeat;
-    //background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color]; 
+    background: url(/assets/img/emtsosk_thumbnail.jpg) center / 100% contain no-repeat;
+    //background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
+}
+
+#placeholder {
+    background: $silver;
 }

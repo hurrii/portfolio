@@ -1,4 +1,11 @@
 .contacts__showcase {
-	width: 80%;
-	margin: 0 auto;
+	min-width: 50%;
+	max-width: 760px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.contacts__showcase {
+		max-width: 90%;
+	}
 }

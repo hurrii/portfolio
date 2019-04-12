@@ -1,3 +1,4 @@
+@import 'my-works/my-works__container.scss';
 @import 'my-works/my-works__showcase.scss';
 @import 'my-works/my-works__button.scss';
 @import 'my-works/my-works__button_color.scss';
@@ -5,9 +6,5 @@
 
 .my-works {
     padding-bottom: 5%;
-}
-
-.my-works__showcase {
-    padding: 1rem;
 }
 

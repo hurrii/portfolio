@@ -1,0 +1,18 @@
+.menu__link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: calc(100% / 5);
+    background-color: rgba(0,0,0,.02);
+
+    span {
+        display: block;
+        color: $silver;
+        width: 100%;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}

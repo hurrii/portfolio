@@ -15,6 +15,7 @@ html {
     height: 100%;
     box-sizing: border-box;
     color: $silver;
+    transition: all 0.25s ease;
     // Fluid fonts
     font-size: calc(11px + .3vw);
 }

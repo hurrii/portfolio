@@ -70,7 +70,7 @@
             <div class="skills-container">
             <div class="skills__showcase bg-silver box-shadow t-grey">
                     <h1 class="t-align-center">Навыки</h1>
-                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей независимо от типа используемых ими устройств. Благодарю применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
+                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей с интерфейсом, независимо от типа используемых ими устройств. Благодаря применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
                 <div class="skills__skills-col">
                 <h4 class="t-align-center">Frontend</h4>
                 <ul class="skills__list">
@@ -132,7 +132,7 @@
         <div class="slanted-spacer bg-silver"></div>
         <h1 class="t-align-center">Образование</h1>
             <div class="education__container container__centered">
-                <div class="education__showcase bg-lightgrey">
+                <div class="education__showcase bg-lightgrey box-shadow">
                     <div class="education__item">
                         <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'19</p>
                         <p class="education__degree-type">Магистратура</p>
@@ -141,7 +141,7 @@
 
                     <hr>
 
-                    <div class="education__item box-shadow">
+                    <div class="education__item">
                     <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'16</p>
                     <p class="education__degree-type">Бакалавриат</p>
                     <p class="education__faculty-name">Факультет управления и экономики высоких технологий</p>
@@ -162,36 +162,24 @@
             </ul>
         </div>
     </section>
-    <div class="menu__onpage-navigation">
-            <div class="slanted-spacer bg-silver"><button class="menu__icon fas fa-bars bg-darkblue"></button></div>
-    </div>
-    <section class="menu bg-darkblue" id="menu__window">
-        
-        
-        
-        <nav class="container__centered">
-            <ul class="t-align-center">
-                <li>
-                <a href="#">Обо мне</a>
-                </li>
-                <li>
-                <a href="#">Мои работы</a>
-                </li>
-                <li>
-                <a href="#">Навыки</a>
-                </li>
-                <li>
-                <a href="#">Образование</a>
-                </li>
-                <li>
-                <a href="#">Контакты</a>
-                </li>
-            </ul>
+    <!-- Menu section -->
+    <section class="menu">
+        <button class="menu__menu-button fas fa-bars t-shadow" id="menuButton"></button>
+        <nav class="menu__container bg-darkblue" id="menuWindow">
+
+                <a class="menu__link" href="#"><span>Обо мне</span></a>
+                
+                <a class="menu__link" href="#"><span>Мои работы</span></a>
+                
+                <a class="menu__link" href="#"><span>Навыки</span></a>
+                
+                <a class="menu__link" href="#"><span>Образование</span></a>
+                
+                <a class="menu__link" href="#"><span>Контакты</span></a>
         </nav>
-        <button id="menu__exit">&#10006;</button>
     </section>
 </main>
 <!-- JS -->
-<script src="assets/js/menu__exit-button.js"></script> 
+<script src="assets/js/menu__button.js"></script> 
 </body>
 </html>

@@ -2,17 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 50%;
-    max-width: 760px;
     border-radius: 4px;
     padding: 1.5rem;
-}
-
-@media (max-width: 480px) {
-
-    .skills__showcase {
-        max-width: 90%;
-    }
 }
 
 @media (max-width: 1024px) {

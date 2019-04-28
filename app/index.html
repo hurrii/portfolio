@@ -7,12 +7,13 @@
     <title>Pavel Silenko | frontend dev portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="assets/img/logo_temp.png" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
     <main>
             <div class="slanted-spacer bg-darkblue slanted-spacer_small"></div>
     <!-- About -->
-    <section class="about container__centered">
+    <section class="about container__centered" id="blockAbout">
         <div class="about__container container__centered">
         <div class="about__text-part">
             <h3 class="about__heading t-blue">Обо мне</h3>
@@ -45,17 +46,14 @@
     </section>
     
     <!-- My works -->
-    <section class="my-works bg-darkblue">
+    <section class="my-works bg-darkblue" id="blockMyWorks">
         <div class="slanted-spacer bg-darkblue"></div>
         <h1 class="t-align-center">Мои работы</h1>
     <div class="my-works__container container__centered">
-        <div class="my-works__showcase container__centered">
+        <div class="my-works__showcase showcase container__centered">
             <!-- <button class="my-works__button my-works__button_color fas fa-chevron-left"></button> -->
                     <figure class="my-works__item"><img  src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk"><figcaption>ЭМЦОСК</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/showcase-kroduct_thumbnail.png" alt="Placeholder" id="placeholder"><figcaption>Kroduct</figcaption></figure>
                     <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
                     
            <!-- <button class="my-works__button my-works__button_color fas fa-chevron-right"></button> -->
@@ -65,12 +63,12 @@
     </section>
     <div class="slanted-spacer bg-darkblue"></div>
     <!-- Skills section -->
-    <section class="skills bg-navyblue">
+    <section class="skills bg-navyblue" id="blockSkills">
     <div class="slanted-spacer bg-navyblue"></div>
             <div class="skills-container">
-            <div class="skills__showcase bg-silver box-shadow t-grey">
+            <div class="skills__showcase showcase bg-silver box-shadow t-grey">
                     <h1 class="t-align-center">Навыки</h1>
-                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей независимо от типа используемых ими устройств. Благодарю применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
+                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей с интерфейсом, независимо от типа используемых ими устройств. Благодаря применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
                 <div class="skills__skills-col">
                 <h4 class="t-align-center">Frontend</h4>
                 <ul class="skills__list">
@@ -128,11 +126,11 @@
     </section>
     <div class="slanted-spacer bg-navyblue"></div>
     <!-- Education section -->
-    <section class="education bg-silver t-grey">
+    <section class="education bg-silver t-grey" id="blockEducation">
         <div class="slanted-spacer bg-silver"></div>
         <h1 class="t-align-center">Образование</h1>
             <div class="education__container container__centered">
-                <div class="education__showcase bg-lightgrey">
+                <div class="education__showcase showcase bg-lightgrey box-shadow">
                     <div class="education__item">
                         <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'19</p>
                         <p class="education__degree-type">Магистратура</p>
@@ -141,7 +139,7 @@
 
                     <hr>
 
-                    <div class="education__item box-shadow">
+                    <div class="education__item">
                     <p class="education__uni-name d-inline">НИЯУ МИФИ</p><p class="education__grad-year d-inline">'16</p>
                     <p class="education__degree-type">Бакалавриат</p>
                     <p class="education__faculty-name">Факультет управления и экономики высоких технологий</p>
@@ -151,47 +149,35 @@
     </section>
     <div class="slanted-spacer bg-silver"></div>
     <!-- Contacts section -->
-    <section class="contacts bg-grey">
+    <section class="contacts bg-grey" id="blockContacts">
     <div class="slanted-spacer bg-grey"></div>
         <h1 class="t-align-center">Заинтересованы в совместной работе?</h1>
         <p class="t-align-center">Напишите мне на почту или в telegram.</p>
         <div class="contacts__container container__centered">
-            <ul class="contacts__showcase">
-                <li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i><a href="tg://resolve?domain=hurrii">hurrii</a></li>
-                <li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i><a href="mailto:silenko.pa@gmail.com" target="_top">silenko.pa@gmail.com</a></li>
+            <ul class="contacts__showcase showcase">
+                <a href="tg://resolve?domain=hurrii"><li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i>hurrii</li></a>
+                <a href="mailto:silenko.pa@gmail.com" target="_top"><li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i>silenko.pa@gmail.com</li></a>
             </ul>
         </div>
     </section>
-    <div class="menu__onpage-navigation">
-            <div class="slanted-spacer bg-silver"><button class="menu__icon fas fa-bars bg-darkblue"></button></div>
-    </div>
-    <section class="menu bg-darkblue" id="menu__window">
-        
-        
-        
-        <nav class="container__centered">
-            <ul class="t-align-center">
-                <li>
-                <a href="#">Обо мне</a>
-                </li>
-                <li>
-                <a href="#">Мои работы</a>
-                </li>
-                <li>
-                <a href="#">Навыки</a>
-                </li>
-                <li>
-                <a href="#">Образование</a>
-                </li>
-                <li>
-                <a href="#">Контакты</a>
-                </li>
-            </ul>
+    <!-- Menu section -->
+    <section class="menu">
+        <button class="menu__menu-button fas fa-bars t-shadow" id="menuButton"></button>
+        <nav class="menu__container bg-darkblue" id="menuWindow">
+
+                <a class="menu__link" href="#"><span>Обо мне</span></a>
+                
+                <a class="menu__link" href="#"><span>Мои работы</span></a>
+                
+                <a class="menu__link" href="#"><span>Навыки</span></a>
+                
+                <a class="menu__link" href="#"><span>Образование</span></a>
+                
+                <a class="menu__link" href="#"><span>Контакты</span></a>
         </nav>
-        <button id="menu__exit">&#10006;</button>
     </section>
 </main>
 <!-- JS -->
-<script src="assets/js/menu__exit-button.js"></script> 
+<script src="assets/js/menu.js"></script> 
 </body>
 </html>

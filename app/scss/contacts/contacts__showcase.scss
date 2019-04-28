@@ -1,11 +1,5 @@
 .contacts__showcase {
-	min-width: 50%;
-	max-width: 760px;
-}
-
-
-@media screen and (max-width: 768px) {
-	.contacts__showcase {
+	@media screen and (max-width: 768px) {
 		max-width: 90%;
 	}
 }

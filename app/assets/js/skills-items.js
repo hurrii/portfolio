@@ -1,6 +1,8 @@
-var item1 = document.getElementById("skillsItem1");
-var item1 = document.getElementById("skillsItem2");
+var myWorksItemList = document.getElementsByClassName("my-works__item");
+var myWowksItem = document.getElementById("myWorksItem")
 
+console.log(myWorksItemList[0]);
 
-item1.onclick = function ShowItemPreview() {};
-
+myWorksItem.onclick = function showItemPreview() {
+    console.log('It worked');
+}

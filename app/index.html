@@ -12,19 +12,20 @@
 <body>
     <main>
             <div class="slanted-spacer bg-darkblue slanted-spacer_small"></div>
-    <!-- About -->
+    <!-- About 
+      ------------------------------------------>
     <section class="about container__centered" id="blockAbout">
-        <div class="about__container container__centered">
+        <div class="about__container showcase">
         <div class="about__text-part">
-            <h3 class="about__heading t-blue">Обо мне</h3>
-            <p class="about__description t-align-justify">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
+            <h3 class="t-blue">Обо мне</h3>
+            <p class="t-align-justify">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
         </div>
 
-        <div class="about__user-block container__centered">
+        <div class="about__user-block">
             <img class="about__userpic" src="assets/img/userpic.jpg" alt="User image">
             <h3 class="about__username t-blue t-shadow">Pavel Silenko</h3>
             <p class="about__job-position t-shadow">frontend developer</p>
-            <ul class="about__links container__centered">
+            <ul class="about__links">
                 <li>
                 <a href="https://github.com/hurrii" target="_blank">
                     <img srcset="assets/img/GitHub-Mark-Light-32px.png 320w, assets/img/GitHub-Mark-Light-64px.png 768w" src="assets/img/GitHub-Mark-Light-64px.png" alt="Github link">
@@ -45,16 +46,17 @@
         </div>
     </section>
     
-    <!-- My works -->
+    <!-- My works 
+      ------------------------------------------>
     <section class="my-works bg-darkblue" id="blockMyWorks">
         <div class="slanted-spacer bg-darkblue"></div>
         <h1 class="t-align-center">Мои работы</h1>
     <div class="my-works__container container__centered">
         <div class="my-works__showcase showcase container__centered">
             <!-- <button class="my-works__button my-works__button_color fas fa-chevron-left"></button> -->
-                    <figure class="my-works__item"><img  src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk"><figcaption>ЭМЦОСК</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/showcase-kroduct_thumbnail.png" alt="Placeholder" id="placeholder"><figcaption>Kroduct</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
+                    <figure class="my-works__item" id="myWorksItem"><img  src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk"><figcaption>ЭМЦОСК</figcaption></figure>
+                    <figure class="my-works__item" id="myWorksItem"><img  src="assets/img/showcase-kroduct_thumbnail.png" alt="Placeholder" id="placeholder"><figcaption>Kroduct</figcaption></figure>
+                    <figure class="my-works__item" id="myWorksItem"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
                     
            <!-- <button class="my-works__button my-works__button_color fas fa-chevron-right"></button> -->
         </div>
@@ -62,7 +64,8 @@
 
     </section>
     <div class="slanted-spacer bg-darkblue"></div>
-    <!-- Skills section -->
+    <!-- Skills section 
+      ------------------------------------------>
     <section class="skills bg-navyblue" id="blockSkills">
     <div class="slanted-spacer bg-navyblue"></div>
             <div class="skills-container">
@@ -115,8 +118,8 @@
                             <span class="">Zeplin</span>
                         </li>
                         <li class="skills__item bg-lightgrey">
-                            <i class="skills__skill-icon" id="xd"></i>
-                            <span class="">Adobe XD</span>
+                            <i class="skills__skill-icon" id="figma"></i>
+                            <span class="">Figma</span>
                         </li>
                     </ul>
                 </div>
@@ -125,7 +128,8 @@
         </div>
     </section>
     <div class="slanted-spacer bg-navyblue"></div>
-    <!-- Education section -->
+    <!-- Education section 
+      ------------------------------------------>
     <section class="education bg-silver t-grey" id="blockEducation">
         <div class="slanted-spacer bg-silver"></div>
         <h1 class="t-align-center">Образование</h1>
@@ -148,7 +152,8 @@
             </div>
     </section>
     <div class="slanted-spacer bg-silver"></div>
-    <!-- Contacts section -->
+    <!-- Contacts section 
+      ------------------------------------------>
     <section class="contacts bg-grey" id="blockContacts">
     <div class="slanted-spacer bg-grey"></div>
         <h1 class="t-align-center">Заинтересованы в совместной работе?</h1>
@@ -160,7 +165,8 @@
             </ul>
         </div>
     </section>
-    <!-- Menu section -->
+    <!-- Menu section 
+      ------------------------------------------>
     <section class="menu">
         <button class="menu__menu-button fas fa-bars t-shadow" id="menuButton"></button>
         <nav class="menu__container bg-darkblue" id="menuWindow">
@@ -177,7 +183,9 @@
         </nav>
     </section>
 </main>
-<!-- JS -->
+<!-- JS 
+      ------------------------------------------>
 <script src="assets/js/menu.js"></script> 
+<script src="assets/js/skills-items.js"></script> 
 </body>
 </html>

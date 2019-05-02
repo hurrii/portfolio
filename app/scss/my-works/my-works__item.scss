@@ -1,5 +1,5 @@
 .my-works__item {
-    max-width: 230px;
+    flex-basis: 230px;
 
     figcaption{
         font-size: 0.9rem;
@@ -10,7 +10,7 @@
 .my-works__item {
     
     img {
-        max-width: 100%;
+        width: 100%;
         border: 1px solid white;
         border-radius: 4px;
     }

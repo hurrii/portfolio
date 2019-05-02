@@ -20,9 +20,6 @@ window.onscroll = function changeBackgroundOnScroll() {
     var blockSkills = document.getElementById('blockSkills').scrollHeight;
 
     //
-    var menuLinkSpan = document.getElementsByClassName("menu__link").document.getElementsByTagName("span");
-
-    alert("menuLinkSpan");
 
     //  Scroll position
     var scrollPosition = document.documentElement.scrollTop;

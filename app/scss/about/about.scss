@@ -1,7 +1,5 @@
 @import 'about__container.scss';
 @import 'about__text-part.scss';
-    @import 'about__heading.scss';
-    @import 'about__description.scss';
 @import 'about__user-block.scss';
     @import 'about__userpic.scss';
     @import 'about__username.scss';
@@ -10,21 +8,21 @@
 
 .about {
     background: url(../../assets/img/css-bg.jpg) center / cover no-repeat;
-    padding: 10% 1rem;
+    padding: 10% 0;
 }
 
 .about__container {
-    max-width: 960px;
+    width: 960px;
 }
 
 .about__userpic {
-	width: 100%;
+    width: 90%;
 }
 
 .about__text-part {
-    max-width: 65%;
+    width: 60%;
 }
 
 .about__user-block {
-    max-width: 35%;
+    width: 40%;
 }

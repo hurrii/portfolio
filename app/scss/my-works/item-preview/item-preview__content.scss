@@ -1,0 +1,26 @@
+.item-preview__content {
+    width: 65%;
+    margin: 0 auto;
+
+    img {
+        display: block;
+        max-width: 90%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+        background: none;
+        color: #ecedee;
+        font-size: 1.3rem;
+        margin: 5px 10px;
+
+         &:hover {
+             color: white;
+         }
+    }
+}

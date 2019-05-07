@@ -28,7 +28,6 @@ window.onscroll = function changeBackgroundOnScroll() {
 
     if (scrollPosition >= (blockAbout + blockMyWorks + blockSkills - 50)) {
         menuWindow.classList.add('bg-silver');
-        menuWindow.style.color = "#ecedee";
     }
 
     else if (scrollPosition >= (blockAbout + blockMyWorks - 50)) {

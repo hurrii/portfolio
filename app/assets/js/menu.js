@@ -4,9 +4,35 @@ var menuWindow = document.getElementById('menuWindow');
 
 
 // Menu slides to the right
-menuButton.onclick = function showMenuWindow() {
+menuButton.addEventListener("click", showMenuWindow, false);
+
+(function eventListenersOnLinks(){
+    var menuLinkArr = document.getElementsByClassName("menu__link");
+    var menuLinkArrLength = menuLinkArr.length;
+
+    for(var i = 0; i < menuLinkArrLength; i++) {
+        menuLinkArr[i].addEventListener("click", showMenuWindow, false);
+
+    }
+})();
+
+
+function showMenuWindow() {
     menuWindow.classList.toggle('menu__container_active');
 }
+
+function showMenuWindow() {
+    menuWindow.classList.toggle('menu__container_active');
+}
+
+
+function menuLinks() {
+    var menuLink = document.getElementsByClassName("menu__link");
+
+    menuLink.addEventListener("click", showMenuWindow, false);
+}
+
+
 
 // Menu window background color changes on scroll
 //var blocksScrollHeight = ;
@@ -19,26 +45,18 @@ window.onscroll = function changeBackgroundOnScroll() {
     var blockMyWorks = document.getElementById('blockMyWorks').scrollHeight;
     var blockSkills = document.getElementById('blockSkills').scrollHeight;
 
-    //
 
     //  Scroll position
     var scrollPosition = document.documentElement.scrollTop;
 
 
 
-    if (scrollPosition >= (blockAbout + blockMyWorks + blockSkills - 50)) {
-        menuWindow.classList.add('bg-silver');
-    }
-
-    else if (scrollPosition >= (blockAbout + blockMyWorks - 50)) {
+if (scrollPosition >= (blockAbout + blockMyWorks - 50)) {
         menuWindow.classList.add('bg-navyblue');
     }
 
-
     else {
         menuWindow.classList.remove('bg-navyblue');
-        menuWindow.classList.remove('bg-silver');
     }
 }
 
-//         menuWindow.classList.toggle('bg-navyblue')

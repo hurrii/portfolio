@@ -7,6 +7,11 @@
     margin: 0 auto;
     height: calc(100% / 5);
     background-color: rgba(0,0,0,.1);
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: rgba(133, 133, 133, 0.1);
+    }
 
     span {
         display: block;

@@ -7,22 +7,53 @@
     @import 'about__links.scss';
 
 .about {
-    background: url(../../assets/img/css-bg.jpg) center / cover no-repeat;
+    background: url(../assets/img/css-bg.jpg) center / cover no-repeat;
     padding: 10% 0;
 }
 
 .about__container {
     width: 960px;
+    display: flex;
 }
 
 .about__userpic {
     width: 90%;
+    min-height: 1px; // ie height render bug fix
+
 }
 
 .about__text-part {
-    width: 55%;
+    width: 60%;
+
+    @media screen and (max-width: 320px) {
+        width: 55%;
+    }
 }
 
 .about__user-block {
-    width: 45%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 320px) {
+        width: 45%;
+    }
+}
+
+.about__username {
+    margin: 5px 0;
+    width: 85%;
+}
+
+.about__job-position {
+    margin: 0;
+    width: 80%
+}
+
+.about__links {
+    margin: 0.5rem 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
 }

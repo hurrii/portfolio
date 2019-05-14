@@ -18,27 +18,48 @@
         <div class="about__container showcase">
         <div class="about__text-part">
             <h3 class="t-blue">Обо мне</h3>
-            <p class="t-align-justify">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
+            <p class="t-align-justify">Привет, я frontend-разработчик со стрем&shy;лен&shy;ием созда&shy;вать современ&shy;ные и удоб&shy;ные в исполь&shy;зо&shy;вании сайты. При разра&shy;ботке я ориентиру&shy;юсь на качество и адаптив&shy;ность конечно&shy;го продукта. Год от года доля мобильн&shy;ого трафика неуклонно растет и уже перешаг&shy;нул&shy;а отмет&shy;ку в 50% от общего количест&shy;ва, поэтому проработ&shy;ка мобиль&shy;ных версий создавае&shy;мых сайтов – мой первей&shy;ший приорит&shy;ет. В процес&shy;се рабо&shy;ты я ставлю своей целью предоста&shy;вить полно&shy;стью отзывчи&shy;вый продукт высо&shy;кого качества, протестиро&shy;ванный на широк&shy;ом спектре девайс&shy;ов.</p>
         </div>
 
         <div class="about__user-block">
             <img class="about__userpic" src="assets/img/userpic.jpg" alt="User image">
-            <h3 class="about__username t-blue t-shadow">Pavel Silenko</h3>
+            <h4 class="about__username t-blue t-shadow">Pavel Silenko</h4>
             <p class="about__job-position t-shadow">frontend developer</p>
             <ul class="about__links">
                 <li>
                 <a href="https://github.com/hurrii" target="_blank">
-                    <img srcset="assets/img/GitHub-Mark-Light-32px.png 320w, assets/img/GitHub-Mark-Light-64px.png 768w" src="assets/img/GitHub-Mark-Light-64px.png" alt="Github link">
+                    <img srcset="
+                    assets/img/GitHub-Mark-Light-32px.png 32w,
+                    assets/img/GitHub-Mark-Light-64px.png 64w"
+                    src="assets/img/GitHub-Mark-Light-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="Github link">
                 </a>
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/10753746/hurrii" target="_blank">
-                    <img srcset="assets/img/stackoverflow-icon-32px.png 320w, , assets/img/stackoverflow-icon-64px.png 768w" src="assets/img/stackoverflow-icon-64px.png" alt="Stackoverflow link">
+                    <img srcset="
+                    assets/img/stackoverflow-icon-32px.png 32w,
+                    assets/img/stackoverflow-icon-64px.png 64w"
+                    src="assets/img/stackoverflow-icon-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="StackOverflow link">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.freecodecamp.org/hurrii" target="_blank">
-                    <img srcset="assets/img/freecodecamp-icon-32px.png 320w, assets/img/freecodecamp-icon-64px.png 768w" src="assets/img/freecodecamp-icon-64px.png" alt="freecodecamp link">
+                    <img srcset="
+                    assets/img/freecodecamp-icon-32px.png 32w,
+                    assets/img/freecodecamp-icon-64px.png 64w"
+                    src="assets/img/freecodecamp-icon-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="StackOverflow link">
                     </a>
                 </li>
             </ul>
@@ -186,7 +207,7 @@
     <section class="my-works__item-preview invisible" id="workItemPreviewWindow">
             <div class="item-preview__content" id="previewContent">
             <img id="itemPreviewImage" src="" alt="">
-            <h5 id="itemPreviewDescription"></h5>
+            <p id="itemPreviewDescription" class="t-align-center"></p>
             <button class="item-preview__close" id="closeItemPreview">&#10005;</button>
             </div>
 

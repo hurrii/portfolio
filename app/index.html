@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +10,65 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
-    <main>
+    <main id="main">
             <div class="slanted-spacer bg-darkblue slanted-spacer_small"></div>
-    <!-- About -->
+    <!-- About 
+        -->
     <section class="about container__centered" id="blockAbout">
-        <div class="about__container container__centered">
+        <div class="about__container showcase">
         <div class="about__text-part">
-            <h3 class="about__heading t-blue">Обо мне</h3>
-            <p class="about__description t-align-justify">Hello there. My name's Pavel and I'm a Moscow based frontend developer. The most enjoyable part of my job is to come up with elegant and effective solutions in my field of expertise. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aut dicta provident in, sed odio sunt ea repellendus, quaerat esse eius maxime? Fugit, saepe corrupti.</p>
+            <h3 class="t-blue">Обо мне</h3>
+            <p class="t-align-justify">Привет, я frontend-разработчик со стрем&shy;лен&shy;ием созда&shy;вать современ&shy;ные и удоб&shy;ные в исполь&shy;зо&shy;вании сайты. При разра&shy;ботке я ориентиру&shy;юсь на качество и адаптив&shy;ность конечно&shy;го продукта. Год от года доля мобильн&shy;ого трафика неуклонно растет и уже перешаг&shy;нул&shy;а отмет&shy;ку в 50% от общего количест&shy;ва, поэтому проработ&shy;ка мобиль&shy;ных версий создавае&shy;мых сайтов – мой первей&shy;ший приорит&shy;ет. В процес&shy;се рабо&shy;ты я ставлю своей целью предоста&shy;вить полно&shy;стью отзывчи&shy;вый продукт высо&shy;кого качества, протестиро&shy;ванный на широк&shy;ом спектре девайс&shy;ов.</p>
         </div>
 
-        <div class="about__user-block container__centered">
-            <img class="about__userpic" src="assets/img/userpic.jpg" alt="User image">
-            <h3 class="about__username t-blue t-shadow">Pavel Silenko</h3>
+        <div class="about__user-block">
+            <img class="about__userpic" srcset="
+            assets/img/userpic-mobile.jpg 280w,
+            assets/img/userpic-smaller.jpg 570w,
+            assets/img/userpic.jpg 677w"
+            src="assets/img/userpic-mobile.jpg"
+            sizes="
+                (max-width: 420px) 280px,
+                (max-width: 1024px) 570px,
+                (max-width: 3000px) 677px"
+            alt="User image">
+            <h4 class="about__username t-blue t-shadow">Pavel Silenko</h4>
             <p class="about__job-position t-shadow">frontend developer</p>
-            <ul class="about__links container__centered">
+            <ul class="about__links">
                 <li>
                 <a href="https://github.com/hurrii" target="_blank">
-                    <img srcset="assets/img/GitHub-Mark-Light-32px.png 320w, assets/img/GitHub-Mark-Light-64px.png 768w" src="assets/img/GitHub-Mark-Light-64px.png" alt="Github link">
+                    <img srcset="
+                    assets/img/GitHub-Mark-Light-32px.png 32w,
+                    assets/img/GitHub-Mark-Light-64px.png 64w"
+                    src="assets/img/GitHub-Mark-Light-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="Github link">
                 </a>
                 </li>
                 <li>
                     <a href="https://stackoverflow.com/users/10753746/hurrii" target="_blank">
-                    <img srcset="assets/img/stackoverflow-icon-32px.png 320w, , assets/img/stackoverflow-icon-64px.png 768w" src="assets/img/stackoverflow-icon-64px.png" alt="Stackoverflow link">
+                    <img srcset="
+                    assets/img/stackoverflow-icon-32px.png 32w,
+                    assets/img/stackoverflow-icon-64px.png 64w"
+                    src="assets/img/stackoverflow-icon-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="StackOverflow link">
                     </a>
                 </li>
                 <li>
                     <a href="https://www.freecodecamp.org/hurrii" target="_blank">
-                    <img srcset="assets/img/freecodecamp-icon-32px.png 320w, assets/img/freecodecamp-icon-64px.png 768w" src="assets/img/freecodecamp-icon-64px.png" alt="freecodecamp link">
+                    <img srcset="
+                    assets/img/freecodecamp-icon-32px.png 32w,
+                    assets/img/freecodecamp-icon-64px.png 64w"
+                    src="assets/img/freecodecamp-icon-32px.png"
+                    sizes="
+                    (max-width: 600px) 32px,
+                    (max-width: 1024px) 64px"
+                    alt="Freecodecamp link">
                     </a>
                 </li>
             </ul>
@@ -45,30 +76,32 @@
         </div>
     </section>
     
-    <!-- My works -->
+    <!-- My works 
+        -->
     <section class="my-works bg-darkblue" id="blockMyWorks">
         <div class="slanted-spacer bg-darkblue"></div>
         <h1 class="t-align-center">Мои работы</h1>
     <div class="my-works__container container__centered">
         <div class="my-works__showcase showcase container__centered">
-            <!-- <button class="my-works__button my-works__button_color fas fa-chevron-left"></button> -->
+
+
+
                     <figure class="my-works__item"><img  src="assets/img/emtsosk_thumbnail.jpg" alt="Emtsosk"><figcaption>ЭМЦОСК</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/showcase-kroduct_thumbnail.png" alt="Placeholder" id="placeholder"><figcaption>Kroduct</figcaption></figure>
-                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder" id="placeholder"><figcaption>Placeholder</figcaption></figure>
-                    
-           <!-- <button class="my-works__button my-works__button_color fas fa-chevron-right"></button> -->
+                    <figure class="my-works__item"><img  src="assets/img/kroduct_thumbnail.jpg" alt="Kroduct"><figcaption>Kroduct</figcaption></figure>
+                    <figure class="my-works__item"><img  src="assets/img/placeholder.png" alt="Placeholder"><figcaption>Placeholder</figcaption></figure>
         </div>
     </div>
 
     </section>
     <div class="slanted-spacer bg-darkblue"></div>
-    <!-- Skills section -->
+    <!-- Skills section 
+        -->
     <section class="skills bg-navyblue" id="blockSkills">
     <div class="slanted-spacer bg-navyblue"></div>
             <div class="skills-container">
             <div class="skills__showcase showcase bg-silver box-shadow t-grey">
                     <h1 class="t-align-center">Навыки</h1>
-                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, создающие условия для наилучшего взаимодействия пользователей с интерфейсом, независимо от типа используемых ими устройств. Благодаря применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
+                    <p class="skills__description-text t-align-justify">Я создаю отзывчивые веб-сайты, обеспечивающие условия для наилучшего взаимодействия пользователей с интерфейсом, независимо от типа используемых ими устройств. Благодаря применению mobile first подхода при разработке, сайты получают отзывчивую вёрстку, которая позволяет максимально эффективно использовать доступное место, как на крупных, так и на небольших девайсах. Кроссбраузерная совместимость обеспечена применением библиотеки обнаружения функционала браузера конечного пользователя, что позволяет посетителям с менее современными браузерами чувствовать себя комфортно находясь на страницах сайта.</p>
                 <div class="skills__skills-col">
                 <h4 class="t-align-center">Frontend</h4>
                 <ul class="skills__list">
@@ -115,17 +148,17 @@
                             <span class="">Zeplin</span>
                         </li>
                         <li class="skills__item bg-lightgrey">
-                            <i class="skills__skill-icon" id="xd"></i>
-                            <span class="">Adobe XD</span>
+                            <i class="skills__skill-icon" id="figma"></i>
+                            <span class="">Figma</span>
                         </li>
                     </ul>
                 </div>
                 </div>
             </div>
-        </div>
     </section>
     <div class="slanted-spacer bg-navyblue"></div>
-    <!-- Education section -->
+    <!-- Education section 
+        -->
     <section class="education bg-silver t-grey" id="blockEducation">
         <div class="slanted-spacer bg-silver"></div>
         <h1 class="t-align-center">Образование</h1>
@@ -148,36 +181,62 @@
             </div>
     </section>
     <div class="slanted-spacer bg-silver"></div>
-    <!-- Contacts section -->
+    <!-- Contacts section 
+        -->
     <section class="contacts bg-grey" id="blockContacts">
     <div class="slanted-spacer bg-grey"></div>
         <h1 class="t-align-center">Заинтересованы в совместной работе?</h1>
         <p class="t-align-center">Напишите мне на почту или в telegram.</p>
         <div class="contacts__container container__centered">
-            <ul class="contacts__showcase showcase">
-                <a href="tg://resolve?domain=hurrii"><li class="contacts__telegram"><i class="contacts__icon fab fa-telegram"></i>hurrii</li></a>
-                <a href="mailto:silenko.pa@gmail.com" target="_top"><li class="contacts__email"><i class="contacts__icon far fa-envelope-open"></i>silenko.pa@gmail.com</li></a>
-            </ul>
+            <div class="contacts__showcase showcase">
+                <a href="tg://resolve?domain=hurrii">
+                        <i class="contacts__icon fab fa-telegram"></i>hurrii
+                </a>
+                <br>
+                <a href="mailto:silenko.pa@gmail.com" target="_top">
+                        <i class="contacts__icon far fa-envelope-open"></i>silenko.pa@gmail.com
+                </a>
+            </div>
         </div>
     </section>
-    <!-- Menu section -->
+    <!-- Menu section 
+        -->
     <section class="menu">
         <button class="menu__menu-button fas fa-bars t-shadow" id="menuButton"></button>
         <nav class="menu__container bg-darkblue" id="menuWindow">
 
-                <a class="menu__link" href="#"><span>Обо мне</span></a>
+                <a class="menu__link" href="#blockAbout"><span>Обо мне</span></a>
                 
-                <a class="menu__link" href="#"><span>Мои работы</span></a>
+                <a class="menu__link" href="#blockMyWorks"><span>Мои работы</span></a>
                 
-                <a class="menu__link" href="#"><span>Навыки</span></a>
+                <a class="menu__link" href="#blockSkills"><span>Навыки</span></a>
                 
-                <a class="menu__link" href="#"><span>Образование</span></a>
+                <a class="menu__link" href="#blockEducation"><span>Образование</span></a>
                 
-                <a class="menu__link" href="#"><span>Контакты</span></a>
+                <a class="menu__link" href="#blockContacts"><span>Контакты</span></a>
         </nav>
     </section>
+
+    <!-- Portfolio works item preview 
+        -->
+
+    <section class="my-works__item-preview invisible" id="workItemPreviewWindow">
+            <div class="item-preview__content" id="previewContent">
+
+                    <a href="" id="itemPreviewLink" target="_blank">
+                        <img id="itemPreviewImage" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="">
+                        <p id="itemPreviewDescription" class="t-align-center"></p>
+                    </a>
+            
+                    <button class="item-preview__close" id="closeItemPreview">&#10005;</button>
+            </div>
+
+            
+    </section>
 </main>
-<!-- JS -->
+<!-- JS 
+      -->
 <script src="assets/js/menu.js"></script> 
+<script src="assets/js/skills-items.js"></script> 
 </body>
 </html>

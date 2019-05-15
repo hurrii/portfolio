@@ -1,12 +1,14 @@
 .about__links {
-
-    margin: 0.5rem;
     padding: 0;
 
     li {
         display: inline-block;
         list-style: none;
-        padding: 0 0.5rem;
+
+        @media screen and (min-width:0\0) {  
+            /* IE10 replacement for flex space-evenly */  
+            margin: 0 auto;
+        }
 
         img {
             min-width: 32px;

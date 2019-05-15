@@ -1,7 +1,5 @@
 @import 'about__container.scss';
 @import 'about__text-part.scss';
-    @import 'about__heading.scss';
-    @import 'about__description.scss';
 @import 'about__user-block.scss';
     @import 'about__userpic.scss';
     @import 'about__username.scss';
@@ -9,22 +7,57 @@
     @import 'about__links.scss';
 
 .about {
-    background: url(../../assets/img/css-bg.jpg) center / cover no-repeat;
-    padding: 10% 1rem;
+    background: url(../assets/img/css-bg.jpg) center / cover no-repeat;
+    padding: 10% 0;
+
+    @media screen and (max-width: 1024px) {
+        background: url(../assets/img/css-bg-smaller.jpg) center / cover no-repeat;
+    }
 }
 
 .about__container {
-    max-width: 960px;
+    width: 960px;
+    display: flex;
 }
 
 .about__userpic {
-	width: 100%;
+    width: 90%;
+    min-height: 1px; // ie height render bug fix
+
 }
 
 .about__text-part {
-    max-width: 65%;
+    width: 60%;
+
+    @media screen and (max-width: 320px) {
+        width: 55%;
+    }
 }
 
 .about__user-block {
-    max-width: 35%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (max-width: 320px) {
+        width: 45%;
+    }
+}
+
+.about__username {
+    margin: 5px 0;
+    width: 85%;
+}
+
+.about__job-position {
+    margin: 0;
+    width: 80%
+}
+
+.about__links {
+    margin: 0.5rem 0;
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
 }

@@ -1,26 +1,21 @@
 .my-works__item {
     max-width: 230px;
+    cursor: pointer;
 
     figcaption{
         font-size: 0.9rem;
         font-weight: lighter;
+        text-align: center;
     }
-}
 
-.my-works__item {
-    
     img {
-        max-width: 100%;
+        width: 100%;
+        max-width: 512px;
         border: 1px solid white;
         border-radius: 4px;
     }
-    
 }
 
-.my-works__item-emtsosk {
-    background: url(/assets/img/emtsosk_thumbnail.jpg) center / 100% contain no-repeat;
-    //background: [background-image] [background-position] / [background-size] [background-repeat] [background-attachment] [background-origin] [background-clip] [background-color];
-}
 
 #placeholder {
     background: $silver;

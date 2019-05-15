@@ -9,6 +9,10 @@
 .about {
     background: url(../assets/img/css-bg.jpg) center / cover no-repeat;
     padding: 10% 0;
+
+    @media screen and (max-width: 1024px) {
+        background: url(../assets/img/css-bg-light.jpg) center / cover no-repeat;
+    }
 }
 
 .about__container {

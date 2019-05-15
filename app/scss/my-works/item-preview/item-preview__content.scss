@@ -1,16 +1,21 @@
 .item-preview__content {
-    width: 65%;
+    max-width: 55%;
     margin: 0 auto;
 
-    @media screen and (max-width: 480px){
-        width: 95%;
+    @media screen and (max-width: 1200px) {
+        max-width: 70%;
+    }
+
+    @media screen and (max-width: 600px) {
+        max-width: 90%;
     }
 
     img {
         display: block;
-        max-width: 90%;
+        width: 100%;
         height: auto;
         margin: 0 auto;
+        border-radius: 4px;
     }
 
     button {
@@ -21,12 +26,23 @@
         background: none;
         color: #ecedee;
         font-size: 1.3rem;
-        margin: 5px 10px;
+        margin: 10px;
+        cursor: pointer;
 
          &:hover {
              color: white;
          }
     }
 
+
+    a {
+        color: $silver;
+        font-weight: bold;
+        text-decoration: none;
+
+        &:visited {color: $lightgrey;}
+
+        p:hover {text-decoration: underline}
+    }
     
 }

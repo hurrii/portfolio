@@ -1,32 +1,42 @@
 var previewWindow = document.getElementById("workItemPreviewWindow");
 
-// Add event listeners on item that has class 'my-works__item"
+
 function workItemsLooper() {
     var myWorksItemList = document.getElementsByClassName("my-works__item");
     var itemsArrLength = myWorksItemList.length - 1; // Shorten the array to make sure placeholder items don't display preview
     var myWorksItem = document.getElementById("itemPreviewImage");
-    var rootArray = ["emtsosk.jpg", "showcase-kroduct.png", "showcase-example.png"];
+    var rootArray = ["emtsosk.jpg", "kroduct.jpg", "showcase-example.png"];
     var itemPreviewDescription = document.getElementById("itemPreviewDescription");
-    var itemPreviewNewText = "";
 
+    // Generate preview window content
+    function previewGenerator(previewArrIndex, previewTextInsert, previewLinkInsert) {
+        myWorksItem.src = "assets/img/" + rootArray[previewArrIndex];
+        itemPreviewDescription.innerText = previewTextInsert;
+        document.getElementById("itemPreviewLink").href = previewLinkInsert;
+    }
+
+    // Event listeners with content
+    myWorksItemList[0].addEventListener("click", function()
+    {
+        previewGenerator(0, "Сайт для АНО \"ЭМЦОСК\"", "http://atomcert.org/");
+    },
+    false);
+
+    myWorksItemList[1].addEventListener("click", function()
+    {
+        previewGenerator(1, "Kroduct", "https://hurrii.github.io/kroduct/app/index.html");
+    },
+    false);
+
+    // Add event listeners on portfolio works to toggle visibility on click
     for (var i = 0; i < itemsArrLength; i++) {
 
         myWorksItemList[i].addEventListener("click", workItemToggleVisibility, false);
         
     }
-
-    myWorksItemList[0].onclick = function() {
-        myWorksItem.src = "assets/img/" + rootArray[0];
-        itemPreviewNewText = "Сайт для АНО \"ЭМЦОСК\"";
-        itemPreviewDescription.innerText = itemPreviewNewText;
-    }
-    myWorksItemList[1].onclick = function() {
-        myWorksItem.src = "assets/img/" + rootArray[1];
-        itemPreviewNewText = "Kroduct";
-        itemPreviewDescription.innerText = itemPreviewNewText;
-    }
-
 }
+
+console.log(window.itemPreviewDescription);
 
 // Call event listeners' func
 workItemsLooper();
@@ -36,12 +46,17 @@ document.getElementById("closeItemPreview").addEventListener("click", workItemTo
 
 // Toggle visibility of an item
 function workItemToggleVisibility() {
-    previewWindow.classList.toggle("invisible");
+    setTimeout(function(){
+        previewWindow.classList.toggle("invisible");
+    }, 100);
 }
 
 // Close preview on click outside the window
 previewWindow.addEventListener("click", function(event){
-    if (event.target.contains(previewWindow)) {previewWindow.classList.toggle("invisible");}
+    if (event.target.contains(previewWindow))
+    {
+        previewWindow.classList.toggle("invisible");
+    }
     else {
         return;
     }

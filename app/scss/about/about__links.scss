@@ -5,6 +5,11 @@
         display: inline-block;
         list-style: none;
 
+        @media screen and (min-width:0\0) {  
+            /* IE10 replacement for flex space-evenly */  
+            margin: 0 auto;
+        }
+
         img {
             min-width: 32px;
             max-width: 42px;

@@ -21,10 +21,6 @@ function showMenuWindow() {
     menuWindow.classList.toggle('menu__container_active');
 }
 
-function showMenuWindow() {
-    menuWindow.classList.toggle('menu__container_active');
-}
-
 
 function menuLinks() {
     var menuLink = document.getElementsByClassName("menu__link");
@@ -32,31 +28,23 @@ function menuLinks() {
     menuLink.addEventListener("click", showMenuWindow, false);
 }
 
-
-
-// Menu window background color changes on scroll
-//var blocksScrollHeight = ;
-//alert((blockAbout.scrollHeight + blockMyWorks.scrollHeight));
-
-
+// Change the color of menu window on page scroll
 window.onscroll = function changeBackgroundOnScroll() {
+    
     // Page block variables
-    var blockAbout = document.getElementById('blockAbout').scrollHeight;
-    var blockMyWorks = document.getElementById('blockMyWorks').scrollHeight;
-    var blockSkills = document.getElementById('blockSkills').scrollHeight;
-
+    var blockAboutPosition = document.getElementById('blockAbout').scrollHeight;
+    var blockMyWorksPosition = document.getElementById('blockMyWorks').scrollHeight;
 
     //  Scroll position
-    var scrollPosition = document.documentElement.scrollTop;
+    var scrollPosition = window.pageYOffset;
 
-
-
-if (scrollPosition >= (blockAbout + blockMyWorks - 50)) {
+if (scrollPosition >= (blockAboutPosition + blockMyWorksPosition)) {
         menuWindow.classList.add('bg-navyblue');
     }
 
     else {
         menuWindow.classList.remove('bg-navyblue');
     }
+
 }
 

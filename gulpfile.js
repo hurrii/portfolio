@@ -5,8 +5,27 @@ var sass = require('gulp-sass');
 var browserSync = require('browser-sync').create();
 var reload = browserSync.reload;
 const autoprefixer = require('gulp-autoprefixer');
+var uglify = require('gulp-uglify');
+var pipeline = require('readable-stream').pipeline;
+var concat = require('gulp-concat');
+
+// Uglify (js minify)
+gulp.task('compress', function () {
+  return pipeline(
+        gulp.src('./app/lib/*.js'),
+        uglify(),
+        gulp.dest('./app/lib/ulgified/')
+  );
+});
 
 
+// Concat JS
+
+gulp.task('scripts', function() {
+  return gulp.src('./app/lib/ulgified/*.js')
+    .pipe(concat('all.js'))
+    .pipe(gulp.dest('./app/js/'));
+});
 
 
 // Sass to CSS compiler
@@ -49,4 +68,4 @@ gulp.task('browser-sync', function() {
     gulp.watch("app/css/*.css").on("change", reload);
 });
 
-gulp.task('default', gulp.series('sass', 'prefix', 'minify-css', 'browser-sync'));
+gulp.task('default', gulp.series('compress', 'scripts', 'sass', 'prefix', 'minify-css', 'browser-sync'));

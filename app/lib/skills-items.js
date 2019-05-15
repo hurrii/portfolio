@@ -36,25 +36,31 @@ function workItemsLooper() {
     }
 }
 
-console.log(window.itemPreviewDescription);
-
 // Call event listeners' func
 workItemsLooper();
 
 // Close item preview when click on (X) button
-document.getElementById("closeItemPreview").addEventListener("click", workItemToggleVisibility, false);
+document.getElementById("closeItemPreview").addEventListener("click", function(){
+    document.getElementById("previewContent").style.animation = "";
+    previewWindow.classList.toggle("invisible");
+}, false);
 
 // Toggle visibility of an item
 function workItemToggleVisibility() {
+    
     setTimeout(function(){
         previewWindow.classList.toggle("invisible");
+        
     }, 100);
+
+    document.getElementById("previewContent").style.animation = "slide-rotate-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both";
 }
 
 // Close preview on click outside the window
 previewWindow.addEventListener("click", function(event){
     if (event.target.contains(previewWindow))
-    {
+    {   
+        document.getElementById("previewContent").style.animation = "";
         previewWindow.classList.toggle("invisible");
     }
     else {

@@ -9,4 +9,20 @@
     background: rgba(0, 0, 0, 0.5);
     display: flex; 
     align-items: center;
+
+    button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border: 0;
+        background: none;
+        color: #ecedee;
+        font-size: 1.3rem;
+        margin: 10px;
+        cursor: pointer;
+
+         &:hover {
+             color: white;
+         }
+    }
 }

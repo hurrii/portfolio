@@ -1,7 +1,7 @@
 var previewWindow = document.getElementById("workItemPreviewWindow");
 
 
-function workItemsLooper() {
+(function workItemsLooper() {
     var myWorksItemList = document.getElementsByClassName("my-works__item");
     var itemsArrLength = myWorksItemList.length - 1; // Shorten the array to make sure placeholder items don't display preview
     var myWorksItem = document.getElementById("itemPreviewImage");
@@ -34,10 +34,7 @@ function workItemsLooper() {
         myWorksItemList[i].addEventListener("click", workItemToggleVisibility, false);
         
     }
-}
-
-// Call event listeners' func
-workItemsLooper();
+})();
 
 // Close item preview when click on (X) button
 document.getElementById("closeItemPreview").addEventListener("click", function(){
@@ -51,7 +48,7 @@ function workItemToggleVisibility() {
     setTimeout(function(){
         previewWindow.classList.toggle("invisible");
         
-    }, 100);
+    }, 300);
 
     document.getElementById("previewContent").style.animation = "slide-rotate-ver-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) reverse both";
 }
